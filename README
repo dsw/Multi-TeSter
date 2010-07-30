@@ -1,0 +1,27 @@
+                 Documentation for mts: Multi-TeSter
+                         Daniel S. Wilkerson
+
+Multi-TeSter, mts, implements a domain-specific language, MTS, for
+generating and running multiple modes of similar tests from a single
+source.
+
+  1) For each mode MTS runs a command line and then checks that the
+     expected exit code, stdout, and stderr result, failing if they do
+     not.
+
+  2) An MTS input file can have multiple modes and all of the above
+     aspects of running the program being tested can depend on the
+     current mode; this feature allows multiple very similar tests to
+     be expressed in one file, re-using their commonality.
+
+Run MTS as follows:
+
+  mts [FLAGS] FILE.mts
+
+This documentation is embedded in MTS at the end; to get MTS to print
+this documentation, type:
+
+  mts --help
+
+Multi-TeSter is released under a BSD-like license, which you can read
+by printing the documentation above, or by reading the source.
