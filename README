@@ -23,5 +23,7 @@ this documentation, type:
 
   mts --help
 
+There is an example of using mts in Example1.
+
 Multi-TeSter is released under a BSD-like license, which you can read
 by printing the documentation above, or by reading the source.
