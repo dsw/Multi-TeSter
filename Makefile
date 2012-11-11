@@ -8,22 +8,27 @@ all:
 # delete any automatic suffix rules that I can
 .SUFFIXES:
 
+
 # **** configuration
 TEST := Test
 
+
 # **** parameterization
 EXE :=
+
 
 # **** all
 .PHONY: all all-splash
 all-splash:; @echo; echo "**** $(@:-splash=)"
 all: all-splash $(EXE)
 
+
 # **** clean
 .PHONY: clean clean-splash
 clean-splash:; @echo; echo "**** $(@:-splash=)"
 clean: clean-splash
 	rm -f $(TEST)/MTS_*
+
 
 # **** check
 .PHONY: check check-splash
